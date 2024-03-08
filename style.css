@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    width:120px;
+    padding: 20 0;
+    cursor: pointer;
+}
+.contant{
+    top: 45%;
+    position: absolute;
+    
+    color:#fff;
+}
+.contant h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.contant h1 span{
+    color:#ff3753;
+}
+.contant button{
+    background:transparent;
+    outline: none;
+    padding: 12px 15px;
+    border:2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contant button img{
+    width: 24px;
+    padding-left: 10px;
+}
+.lunch-time{
+    display: flex;
+}
+.lunch-time div{
+    flex-basis: 100%;
+}
+.lunch-time div p{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.rocket{
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 3s linear infinite;
+
+}
+@keyframes rocket{
+
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+
+}
